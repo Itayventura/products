@@ -16,8 +16,8 @@ public class GreetingResource {
 
     @Path("/world")
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String helloWorld() {
-        return "Hello World";
+    @Produces(MediaType.APPLICATION_JSON)
+    public Product helloWorld() {
+        return new Product("Hello World");
     }
 }
