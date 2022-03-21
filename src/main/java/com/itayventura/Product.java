@@ -2,7 +2,9 @@ package com.itayventura;
 
 public class Product {
 
-    private final String name;
+    private String name;
+
+    protected Product(){}
 
     public Product(String name) {
         this.name = name;
